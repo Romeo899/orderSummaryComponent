@@ -28,7 +28,7 @@ Your users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/order-summary-component-363Sdv0geP)
 - Live Site URL: [Order Summary Component by Romeo Codes](https://ordersummarycomponentrc.netlify.app/)
 
 ### Built with
