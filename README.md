@@ -13,20 +13,23 @@
 
 ### The challenge
 
-Users should be able to:
+Your challenge is to build out this order summary card component and get it looking as close to the design as possible.
 
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+
+Your users should be able to:
+
+- See hover states for interactive elements
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Order Summary Component by Romeo Codes](https://ordersummarycomponentrc.netlify.app/)
 
 ### Built with
 
