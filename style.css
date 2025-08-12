@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 16px;
+  }
+  body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display";
+  }
+  
+  /* Mobile Styles */
+  @media screen and (max-width: 375px) {
+    body {
+      background-image: url(./images/pattern-background-mobile.svg);
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    .box {
+      width: 85%; /* 85% of parent width */
+      max-width: 300px;
+      background-color: white;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem; /* 16px */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 10px 30px hsla(224, 23%, 55%, 0.2);
+      overflow: hidden;
+    }
+  
+    .box > img {
+      width: 100%;
+    }
+  
+    .box > h1 {
+      width: 85%; /* 85% of parent width */
+      text-align: center;
+      font-size: 1.25rem; /* 20px */
+      margin-top: 1rem; /* 16px */
+      letter-spacing: 0.05rem; /* 0.8px */
+    }
+  
+    .box > p {
+      width: 85%; /* 85% of parent width */
+      text-align: center;
+      font-size: 0.85rem; /* 13.6px */
+      line-height: 1.2rem; /* 19.2px */
+      color: hsl(224, 23%, 55%);
+    }
+  
+    .plan-box {
+      width: 85%; /* 85% of parent width */
+      background-color: hsl(225, 100%, 98%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 1rem; /* 12.8px 16px */
+      border-radius: 10px;
+    }
+  
+    .plan-box > div {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem; /* 12px */
+    }
+  
+    .plan-box > div > img {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .plan-box .info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem; /* 3.2px */
+    }
+  
+    .plan-name {
+      font-size: 0.8rem; /* 12.8px */
+      font-weight: bold;
+    }
+  
+    .plan-price {
+      font-size: 0.8rem; /* 12.8px */
+      color: hsl(224, 23%, 55%);
+    }
+  
+    .plan-box > a {
+      font-size: 0.7rem; /* 11.2px */
+      font-weight: bold;
+      color: hsl(245, 75%, 52%);
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  
+    .plan-box > a:hover {
+      color: hsla(245, 75%, 52%, 0.7);
+    }
+  
+    .payment {
+      all: unset;
+      width: 85%; /* 85% of parent width */
+      padding: 0.8rem 0; /* 12.8px 0 */
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 0.8rem; /* 12.8px */
+      letter-spacing: 0.05rem; /* 0.8px */
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 5px 15px hsla(245, 75%, 52%, 0.3);
+      transition: background-color 300ms linear;
+    }
+  
+    .payment:hover {
+      background-color: rgba(56, 41, 224, 0.7);
+    }
+  
+    .cancel {
+      all: unset;
+      width: 85%; /* 85% of parent width */
+      padding: 0.8rem 0; /* 12.8px 0 */
+      color: hsl(224, 23%, 55%);
+      text-align: center;
+      font-size: 0.8rem; /* 12.8px */
+      letter-spacing: 0.05rem; /* 0.8px */
+      font-weight: bold;
+      cursor: pointer;
+      transition: color 300ms linear;
+    }
+  
+    .cancel:hover {
+      color: black;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media screen and (min-width: 376px) and (max-width: 1440px) {
+    body {
+      background-image: url(./images/pattern-background-desktop.svg);
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+    .box {
+      width: 85%; /* 85% of parent width */
+      max-width: 330px;
+      background-color: white;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem; /* 16px */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      box-shadow: 0 10px 30px hsla(224, 23%, 55%, 0.2);
+      padding-bottom: 1.5rem; /* 24px */
+      overflow: hidden;
+    }
+  
+    .box > img {
+      width: 100%;
+    }
+  
+    .box > h1 {
+      width: 80%; /* 80% of parent width */
+      text-align: center;
+      font-size: 1.25rem; /* 24px */
+      letter-spacing: 0.05rem; /* 0.8px */
+  
+      margin-top: 1rem; /* 16px */
+    }
+  
+    .box > p {
+      width: 80%; /* 80% of parent width */
+      text-align: center;
+      font-size: 0.85rem; /* 16px */
+      line-height: 1.25rem; /* 24px */
+      color: hsl(224, 23%, 55%);
+    }
+  
+    .plan-box {
+      width: 80%; /* 80% of parent width */
+      background-color: hsl(225, 100%, 98%);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 1rem; /* 12.8px 16px */
+      border-radius: 10px;
+    }
+  
+    .plan-box > div {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem; /* 12px */
+    }
+  
+    .plan-box > div > img {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .plan-box .info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+  
+    .plan-name {
+      font-size: 0.85rem; /* 16.8px */
+      font-weight: bold;
+    }
+  
+    .plan-price {
+      font-size: 0.85rem; /* 15.2px */
+      color: hsl(224, 23%, 55%);
+    }
+  
+    .plan-box > a {
+      font-size: 0.7rem; /* 14.4px */
+      font-weight: bold;
+      color: hsl(245, 75%, 52%);
+      cursor: pointer;
+      transition: all 300ms linear;
+      text-decoration: underline;
+    }
+  
+    .plan-box > a:hover {
+      color: hsla(245, 75%, 52%, 0.7);
+      text-decoration: none;
+    }
+  
+    .payment {
+      all: unset;
+      width: 80%; /* 80% of parent width */
+      padding: 0.9rem 0; /* 14.4px 0 */
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 0.75rem; /* 16px */
+      letter-spacing: 0.05rem; /* 0.8px */
+  
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 5px 15px hsla(245, 75%, 52%, 0.3);
+      transition: all 300ms linear;
+    }
+  
+    .payment:hover {
+      background-color: rgba(56, 41, 224, 0.7);
+    }
+  
+    .cancel {
+      all: unset;
+      width: 80%; /* 80% of parent width */
+      padding: 0.8rem 0; /* 12.8px 0 */
+      color: hsl(224, 23%, 55%);
+      text-align: center;
+      font-size: 0.75rem; /* 16px */
+      letter-spacing: 0.05rem; /* 0.8px */
+  
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 300ms linear;
+    }
+  
+    .cancel:hover {
+      color: black;
+    }
+  }
